@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Moonsweeper</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Fields">Fields</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Board.html">Board</a></li>
+  <li><a href="../classes/Mine.html">Mine</a></li>
+  <li><a href="../classes/TextPart.html">TextPart</a></li>
+  <li><strong>Tile</strong></li>
+  <li><a href="../classes/MouseInputsManager.html">MouseInputsManager</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Initializer.html">Initializer</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>Tile</code></h1>
+<p>Class that represents one single MineSweeper regular tile (with no mine on it)</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Tile.Activated">Tile.Activated</a></td>
+	<td class="summary">True if the tile has already been clicked on</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Tile.Board">Tile.Board</a></td>
+	<td class="summary">Reference to the Board containing this tile</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Tile.XPosition">Tile.XPosition</a></td>
+	<td class="summary">X position of the tile in the board</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Tile.YPosition">Tile.YPosition</a></td>
+	<td class="summary">Y position of the tile in the board</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Tile\new">Tile\new (board, x, y)</a></td>
+	<td class="summary">Instanciates a mine</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Tile\Activate">Tile\Activate ()</a></td>
+	<td class="summary">Called when the tile is clicked.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Tile\Reveal">Tile\Reveal ()</a></td>
+	<td class="summary">Display the number of neighboring mines.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Tile\ToggleFlag">Tile\ToggleFlag ()</a></td>
+	<td class="summary">Toggle the flag on this tile.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Tile.Activated"></a>
+    <strong>Tile.Activated</strong>
+    </dt>
+    <dd>
+    True if the tile has already been clicked on
+
+
+    <ul>
+        <li><span class="parameter">Activated</span>
+         boolean
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Tile.Board"></a>
+    <strong>Tile.Board</strong>
+    </dt>
+    <dd>
+    Reference to the Board containing this tile
+
+
+    <ul>
+        <li><span class="parameter">Board</span>
+         <a href="../classes/Board.html#">Board</a>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Tile.XPosition"></a>
+    <strong>Tile.XPosition</strong>
+    </dt>
+    <dd>
+    X position of the tile in the board
+
+
+    <ul>
+        <li><span class="parameter">XPosition</span>
+         number
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Tile.YPosition"></a>
+    <strong>Tile.YPosition</strong>
+    </dt>
+    <dd>
+    Y position of the tile in the board
+
+
+    <ul>
+        <li><span class="parameter">YPosition</span>
+         number
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Tile\new"></a>
+    <strong>Tile\new (board, x, y)</strong>
+    </dt>
+    <dd>
+    Instanciates a mine
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">board</span>
+            <span class="types"><a class="type" href="../classes/Board.html#">Board</a></span>
+         the Board instance containing this tile
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+         the x position of the tile in the board
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+         the y position of the tile in the board
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Tile\Activate"></a>
+    <strong>Tile\Activate ()</strong>
+    </dt>
+    <dd>
+    Called when the tile is clicked.  Reveal it and prevent clicking on it again.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Tile\Reveal"></a>
+    <strong>Tile\Reveal ()</strong>
+    </dt>
+    <dd>
+    Display the number of neighboring mines.  If 0, reveal neighboring tiles.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Tile\ToggleFlag"></a>
+    <strong>Tile\ToggleFlag ()</strong>
+    </dt>
+    <dd>
+    Toggle the flag on this tile.  Called when right-clicking on the tile.
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2018-09-20 14:09:49 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Moonsweeper</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Fields">Fields</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Board.html">Board</a></li>
+  <li><a href="../classes/Mine.html">Mine</a></li>
+  <li><a href="../classes/TextPart.html">TextPart</a></li>
+  <li><a href="../classes/Tile.html">Tile</a></li>
+  <li><strong>MouseInputsManager</strong></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Initializer.html">Initializer</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>MouseInputsManager</code></h1>
+<p>Static class for registering and reacting to mouse inputs</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#MouseInputsManager.LeftClickHandlers">MouseInputsManager.LeftClickHandlers</a></td>
+	<td class="summary">Dictionary that associates a Roblox part with a function to be executed once the part is
+ clicked</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MouseInputsManager.RightClickHandlers">MouseInputsManager.RightClickHandlers</a></td>
+	<td class="summary">Same as above, but for right clicks</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MouseInputsManager.Mouse">MouseInputsManager.Mouse</a></td>
+	<td class="summary">Reference to the player's mouse</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MouseInputsManager.SelectionBox">MouseInputsManager.SelectionBox</a></td>
+	<td class="summary">A Roblox SelectionBox that is shown over any hovered activable part</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#MouseInputsManager\Initialize">MouseInputsManager\Initialize ()</a></td>
+	<td class="summary">Initialize fields and start reacting to clicks</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MouseInputsManager\BindPartToClick">MouseInputsManager\BindPartToClick (part, leftClickCallback, rightClickCallback)</a></td>
+	<td class="summary">Set some functions to be executed once a part is left or right clicked</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MouseInputsManager\UnbindPartFromClick">MouseInputsManager\UnbindPartFromClick (part)</a></td>
+	<td class="summary">Make the given part not react to clicks anymore</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MouseInputsManager\UpdateSelectionBox">MouseInputsManager\UpdateSelectionBox ()</a></td>
+	<td class="summary">Update the selection box's adornee to be the hovered clickable part, if applicable</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "MouseInputsManager.LeftClickHandlers"></a>
+    <strong>MouseInputsManager.LeftClickHandlers</strong>
+    </dt>
+    <dd>
+    Dictionary that associates a Roblox part with a function to be executed once the part is
+ clicked
+
+
+    <ul>
+        <li><span class="parameter">LeftClickHandlers</span>
+         {Instance, function}
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MouseInputsManager.RightClickHandlers"></a>
+    <strong>MouseInputsManager.RightClickHandlers</strong>
+    </dt>
+    <dd>
+    Same as above, but for right clicks
+
+
+    <ul>
+        <li><span class="parameter">RightClickHandlers</span>
+         {Instance, function}
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MouseInputsManager.Mouse"></a>
+    <strong>MouseInputsManager.Mouse</strong>
+    </dt>
+    <dd>
+    Reference to the player's mouse
+
+
+    <ul>
+        <li><span class="parameter">Mouse</span>
+         Instance
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MouseInputsManager.SelectionBox"></a>
+    <strong>MouseInputsManager.SelectionBox</strong>
+    </dt>
+    <dd>
+    A Roblox SelectionBox that is shown over any hovered activable part
+
+
+    <ul>
+        <li><span class="parameter">SelectionBox</span>
+         Instance
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "MouseInputsManager\Initialize"></a>
+    <strong>MouseInputsManager\Initialize ()</strong>
+    </dt>
+    <dd>
+    Initialize fields and start reacting to clicks
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MouseInputsManager\BindPartToClick"></a>
+    <strong>MouseInputsManager\BindPartToClick (part, leftClickCallback, rightClickCallback)</strong>
+    </dt>
+    <dd>
+    Set some functions to be executed once a part is left or right clicked
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">part</span>
+            <span class="types"><span class="type">Instance</span></span>
+         the part that will trigger the functions when clicked
+        </li>
+        <li><span class="parameter">leftClickCallback</span>
+            <span class="types"><span class="type">function</span></span>
+         what to execute when the part is left clicked
+        </li>
+        <li><span class="parameter">rightClickCallback</span>
+            <span class="types"><span class="type">function</span></span>
+         what to execute when the part is right clicked
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MouseInputsManager\UnbindPartFromClick"></a>
+    <strong>MouseInputsManager\UnbindPartFromClick (part)</strong>
+    </dt>
+    <dd>
+    Make the given part not react to clicks anymore
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">part</span>
+            <span class="types"><span class="type">Instance</span></span>
+         the part to unbind
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MouseInputsManager\UpdateSelectionBox"></a>
+    <strong>MouseInputsManager\UpdateSelectionBox ()</strong>
+    </dt>
+    <dd>
+    Update the selection box's adornee to be the hovered clickable part, if applicable
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2018-09-20 14:09:49 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

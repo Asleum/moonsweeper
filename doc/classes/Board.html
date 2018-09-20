@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Moonsweeper</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Fields">Fields</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><strong>Board</strong></li>
+  <li><a href="../classes/Mine.html">Mine</a></li>
+  <li><a href="../classes/TextPart.html">TextPart</a></li>
+  <li><a href="../classes/Tile.html">Tile</a></li>
+  <li><a href="../classes/MouseInputsManager.html">MouseInputsManager</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Initializer.html">Initializer</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>Board</code></h1>
+<p>Class that represents a board of Minesweeper</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Board.Width">Board.Width</a></td>
+	<td class="summary">Width of the board, in tiles</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board.Height">Board.Height</a></td>
+	<td class="summary">Height of the board, in tiles</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board.Mines">Board.Mines</a></td>
+	<td class="summary">Number of mines in this board</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board.Position">Board.Position</a></td>
+	<td class="summary">Position of this board in the workspace</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board.GameEnded">Board.GameEnded</a></td>
+	<td class="summary">If true, then stop the game</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board.CorrectlyFlaggedMines">Board.CorrectlyFlaggedMines</a></td>
+	<td class="summary">Count how many mines have been correctly flagged</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board.FlagsCount">Board.FlagsCount</a></td>
+	<td class="summary">Keeps track of the amount of flags in the board</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board.MinesCounter">Board.MinesCounter</a></td>
+	<td class="summary">Part that display the amount of mines remaining</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board.Resetter">Board.Resetter</a></td>
+	<td class="summary">Part that will reset the game when clicked</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board.Tiles">Board.Tiles</a></td>
+	<td class="summary">List of all the tiles that make up this board</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Board\new">Board\new (width, height, mines, position)</a></td>
+	<td class="summary">Instanciates a new board</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board\PrepareBoard">Board\PrepareBoard ()</a></td>
+	<td class="summary">Spawns the board's tiles</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board\ResetGame">Board\ResetGame ()</a></td>
+	<td class="summary">Resets all the boards's field and regenerate the tiles.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board\EndGame">Board\EndGame (revealMines)</a></td>
+	<td class="summary">Reveal all the tiles</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board\TileNeighborsIterator">Board\TileNeighborsIterator (tile)</a></td>
+	<td class="summary">Makes an iterator that goes over a given tile's neighbors</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board\UpdateMinesCounter">Board\UpdateMinesCounter ()</a></td>
+	<td class="summary">Makes the MinesCounter reflect the amount of flags placed</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Board\CheckVictory">Board\CheckVictory ()</a></td>
+	<td class="summary">Checks if the last mine has been flagged, and stop the game it it's the case</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Board.Width"></a>
+    <strong>Board.Width</strong>
+    </dt>
+    <dd>
+    Width of the board, in tiles
+
+
+    <ul>
+        <li><span class="parameter">Width</span>
+         number
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board.Height"></a>
+    <strong>Board.Height</strong>
+    </dt>
+    <dd>
+    Height of the board, in tiles
+
+
+    <ul>
+        <li><span class="parameter">Height</span>
+         number
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board.Mines"></a>
+    <strong>Board.Mines</strong>
+    </dt>
+    <dd>
+    Number of mines in this board
+
+
+    <ul>
+        <li><span class="parameter">Mines</span>
+         number
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board.Position"></a>
+    <strong>Board.Position</strong>
+    </dt>
+    <dd>
+    Position of this board in the workspace
+
+
+    <ul>
+        <li><span class="parameter">Position</span>
+         Vector3
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board.GameEnded"></a>
+    <strong>Board.GameEnded</strong>
+    </dt>
+    <dd>
+    If true, then stop the game
+
+
+    <ul>
+        <li><span class="parameter">GameEnded</span>
+         boolean
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board.CorrectlyFlaggedMines"></a>
+    <strong>Board.CorrectlyFlaggedMines</strong>
+    </dt>
+    <dd>
+    Count how many mines have been correctly flagged
+
+
+    <ul>
+        <li><span class="parameter">CorrectlyFlaggedMines</span>
+         number
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board.FlagsCount"></a>
+    <strong>Board.FlagsCount</strong>
+    </dt>
+    <dd>
+    Keeps track of the amount of flags in the board
+
+
+    <ul>
+        <li><span class="parameter">FlagsCount</span>
+         number
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board.MinesCounter"></a>
+    <strong>Board.MinesCounter</strong>
+    </dt>
+    <dd>
+    Part that display the amount of mines remaining
+
+
+    <ul>
+        <li><span class="parameter">MinesCounter</span>
+         <a href="../classes/TextPart.html#">TextPart</a>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board.Resetter"></a>
+    <strong>Board.Resetter</strong>
+    </dt>
+    <dd>
+    Part that will reset the game when clicked
+
+
+    <ul>
+        <li><span class="parameter">Resetter</span>
+         <a href="../classes/TextPart.html#">TextPart</a>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board.Tiles"></a>
+    <strong>Board.Tiles</strong>
+    </dt>
+    <dd>
+    List of all the tiles that make up this board
+
+
+    <ul>
+        <li><span class="parameter">Tiles</span>
+         {<a href="../classes/Tile.html#">Tile</a>}
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Board\new"></a>
+    <strong>Board\new (width, height, mines, position)</strong>
+    </dt>
+    <dd>
+    Instanciates a new board
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">width</span>
+            <span class="types"><span class="type">number</span></span>
+         how many tiles make up the board's width
+        </li>
+        <li><span class="parameter">height</span>
+            <span class="types"><span class="type">number</span></span>
+         how many tiles make up the board's height
+        </li>
+        <li><span class="parameter">mines</span>
+            <span class="types"><span class="type">number</span></span>
+         how many mines are to be placed in the board
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><span class="type">Vector3</span></span>
+         3D position of the board's top-left corner
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board\PrepareBoard"></a>
+    <strong>Board\PrepareBoard ()</strong>
+    </dt>
+    <dd>
+    Spawns the board's tiles
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board\ResetGame"></a>
+    <strong>Board\ResetGame ()</strong>
+    </dt>
+    <dd>
+    Resets all the boards's field and regenerate the tiles.  This is called when the reset part
+ is clicked.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board\EndGame"></a>
+    <strong>Board\EndGame (revealMines)</strong>
+    </dt>
+    <dd>
+    Reveal all the tiles
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">revealMines</span>
+            <span class="types"><span class="type">boolean</span></span>
+         if true, mines will also be revealed
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board\TileNeighborsIterator"></a>
+    <strong>Board\TileNeighborsIterator (tile)</strong>
+    </dt>
+    <dd>
+    Makes an iterator that goes over a given tile's neighbors
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">tile</span>
+            <span class="types"><a class="type" href="../classes/Tile.html#">Tile</a></span>
+         the tile we want to get the neighbors of
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">function</span></span>
+        an iterator for the tile's neighbors
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board\UpdateMinesCounter"></a>
+    <strong>Board\UpdateMinesCounter ()</strong>
+    </dt>
+    <dd>
+    Makes the MinesCounter reflect the amount of flags placed
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Board\CheckVictory"></a>
+    <strong>Board\CheckVictory ()</strong>
+    </dt>
+    <dd>
+    Checks if the last mine has been flagged, and stop the game it it's the case
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2018-09-20 14:09:49 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
